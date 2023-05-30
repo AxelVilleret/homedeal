@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:id="@+id/image_details"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/profile_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="string/content_description_media" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/username_profile"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Texte 1"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_profile"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Texte 2"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/button_update_profile_details"
+                android:text="Modifier le profil"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_baseline_edit_24"
+                app:iconTint="?attr/colorOnSurface"
+                android:textColor="?attr/colorOnSurface"
+                android:backgroundTint="@android:color/transparent"
+                app:strokeWidth="0dp"
+                app:strokeColor="@android:color/transparent"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/button_created_deals_details"
+                android:text="Mes deals"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_baseline_local_fire_department_24"
+                app:iconTint="?attr/colorOnSurface"
+                android:textColor="?attr/colorOnSurface"
+                android:backgroundTint="@android:color/transparent"
+                app:strokeWidth="0dp"
+                app:strokeColor="@android:color/transparent"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/button_saved_deals_details"
+                android:text="Deals sauvegardés"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_baseline_collections_bookmark_24"
+                app:iconTint="?attr/colorOnSurface"
+                android:textColor="?attr/colorOnSurface"
+                android:backgroundTint="@android:color/transparent"
+                app:strokeWidth="0dp"
+                app:strokeColor="@android:color/transparent"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/button_logout_details"
+                android:text="Se déconnecter"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_baseline_logout_24"
+                app:iconTint="?attr/colorOnSurface"
+                android:textColor="?attr/colorOnSurface"
+                android:backgroundTint="@android:color/transparent"
+                app:strokeWidth="0dp"
+                app:strokeColor="@android:color/transparent"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/themeSwitchButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Changer de thème" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

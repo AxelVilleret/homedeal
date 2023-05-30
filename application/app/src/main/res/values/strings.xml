@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeDeal</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_newdeal">Poster</string>
+    <string name="title_notifications">Alertes</string>
+    <string name="title_profile">Profil</string>
+
+
+</resources>

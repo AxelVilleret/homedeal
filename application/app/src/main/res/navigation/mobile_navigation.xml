@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.homedeal.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_newdeal"
+        android:name="com.example.homedeal.ui.newdeal.NewDealFragment"
+        android:label="@string/title_newdeal"
+        tools:layout="@layout/fragment_newdeal" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.homedeal.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.homedeal.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_saveddeals"
+        android:name="com.example.homedeal.ui.profile.SavedDealsFragment"
+        android:label="fragment_saved_deals"
+        tools:layout="@layout/fragment_saved_deals" />
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.example.homedeal.ui.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/navigation_update_profile"
+        android:name="com.example.homedeal.ui.profile.UpdateProfileFragment"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" />
+    <fragment
+        android:id="@+id/navigation_created_deals"
+        android:name="com.example.homedeal.ui.profile.CreatedDealsFragment"
+        android:label="fragment_created_deals"
+        tools:layout="@layout/fragment_created_deals" />
+</navigation>
